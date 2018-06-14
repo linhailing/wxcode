@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+<view class='swiper'>
+  <swiper class='swiper-item' indicator-dots="true" autoplay="true" interval="2000" duration="500">
+      <swiper-item class="slide-image">
+        <image src="/images/banner1.png"  />
+      </swiper-item>
+      <swiper-item class="slide-image">
+        <image src="/images/banner2.png" />
+      </swiper-item>
+      <swiper-item class="slide-image">
+        <image src="/images/banner3.png"/>
+      </swiper-item>
+  </swiper>
+</view>
+<view class='nav'>
+  <navigator url="/pages/lottery/lottery">
+    <view class='nav-item'>
+      <image class='nav-item-icon' src='/images/icon/icon1.png'/>
+      <text class='nav-item-text'>领取彩票</text>
+    </view>
+  </navigator>
+  <view class='nav-item'>
+    <image class='nav-item-icon'  src='/images/icon/icon2.png'/>
+    <text class='nav-item-text'>领取荷豆</text>
+  </view>
+  <view class='nav-item'>
+    <image class='nav-item-icon' src='/images/icon/icon3.png'/>
+    <text class='nav-item-text'>玩转荷豆</text>
+  </view>
+  <view class='nav-item'>
+    <image class='nav-item-icon' src='/images/icon/icon4.png'/>
+    <text class='nav-item-text'>荷豆兑换</text>
+  </view>
+</view>
+<view class='welfare'>
+  <view class='welfare-title'>
+   <image class='welfare-icon' src='/images/welfare.png'/>
+  </view>
+  <view class='welfare-item'>
+    <text class='w-item-title'>测试文章标题</text>
+    <view class='w-item-image'>
+      <image class='w-item-icon' src='/images/item1.png' />
+    </view>
+    <view class='w-item-footer'>
+      <text class="w-item-click">10</text>
+      <text class="w-item-number">10已领取</text>
+    </view>
+  </view>
+  <view class='welfare-item'>
+    <text class='w-item-title'>测试文章标题2</text>
+    <view class='w-item-image'>
+      <image class='w-item-icon' src='/images/item2.png' />
+    </view>
+    <view class='w-item-footer'>
+      <text class="w-item-click">10</text>
+      <text class="w-item-number">10已领取</text>
+    </view>
+  </view>
+  <view class='welfare-item'>
+    <text class='w-item-title'>测试文章标题3</text>
+    <view class='w-item-image'>
+      <image class='w-item-icon' src='/images/item3.png' />
+    </view>
+    <view class='w-item-footer'>
+      <text class="w-item-click">10</text>
+      <text class="w-item-number">10已领取</text>
+    </view>
+  </view>
+</view>
+</view>

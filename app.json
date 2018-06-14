@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/lottery/lottery",
+    "pages/index/index",
+    "pages/game/game",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ff4114",
+    "navigationBarTitleText": "小游荷包",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#ff4114",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home-s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/game/game",
+        "iconPath": "images/icon/game.png",
+        "selectedIconPath": "images/icon/game-s.png",
+        "text": "游戏"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my-s.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+<!--pages/lottery/lottery.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image class='header-img' src='/images/lottery.png'/>
+  </view>
+
+  <view class='wrapper'>
+    <view class='w-issue'>
+        <view class="w-header">
+          <view class='w-text'>距离开奖还剩: 
+          <text class='w-date'>06</text>:<text class='w-date'>05</text>:<text  class='w-date'>06</text></view>
+        </view>
+        <view class='w-body'>
+          <text>2018064期</text>
+          <view>
+            <text>01</text>
+            <text>02</text>
+            <text>03</text>
+            <text>04</text>
+            <text>05</text>
+            <text>06</text>
+            <text>07</text>
+          </view>
+        </view>
+    </view>
+  </view>
+
+  
+</view>

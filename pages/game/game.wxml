@@ -1,0 +1,39 @@
+<!--pages/game/game.wxml-->
+<view class='container'>
+<view class='ad'>
+  <image class='ad-img' src='/images/game.png' />
+</view>
+  <view class='content'>
+    <text class='title'>小游娱乐</text>
+    <view class='c-list'>
+      <view class='c-item'>
+        <view class='c-link'>
+            <image class='c-img' src='/images/game-item.png'/>
+            <text class='c-name'>罗宾汉</text>
+            <text class='c-play'>3422人在玩</text>
+        </view>
+        </view>
+        <view class='c-item'>
+        <view class='c-link'>
+            <image class='c-img' src='/images/game-item.png'/>
+            <text class='c-name'>罗宾汉</text>
+            <text class='c-play'>3422人在玩</text>
+        </view>
+        </view>
+        <view class='c-item'>
+        <view class='c-link'>
+            <image class='c-img' src='/images/game-item.png'/>
+            <text class='c-name'>罗宾汉</text>
+            <text class='c-play'>3422人在玩</text>
+        </view>
+        </view>
+        <view class='c-item'>
+        <view class='c-link'>
+            <image class='c-img' src='/images/game-item.png'/>
+            <text class='c-name'>罗宾汉</text>
+            <text class='c-play'>3422人在玩</text>
+        </view>
+        </view>
+    </view>
+  </view>
+</view>

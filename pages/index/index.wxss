@@ -1,0 +1,88 @@
+/**index.wxss**/
+.swiper{
+  width: 100%;
+  background: #fff;
+}
+.swiper .swiper-item{
+  width: 100%;
+}
+.swiper .slide-image{
+  height: 170rpx;
+}
+.swiper .slide-image image{
+  width: 100%;
+  height: 100%;
+}
+.nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+   background: #fff;
+}
+.nav .nav-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15rpx 20rpx;
+}
+.nav .nav-item .nav-item-icon{
+  width: 100rpx;
+  height: 100rpx;
+}
+.nav .nav-item .nav-item-text{
+  font-size: 24rpx;
+  margin-top: 15rpx;
+  color: #7f7f7f;
+}
+.welfare{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.welfare .welfare-title{
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #fff;
+}
+.welfare .welfare-title .welfare-icon{
+  width: 50%;
+  height: 50rpx;
+  margin-top: 15rpx;
+}
+.welfare .welfare-item{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin-bottom: 15rpx;
+}
+.welfare .welfare-item .w-item-title{
+  font-size: 28rpx;
+  color: #000;
+  margin:  10rpx 20rpx;
+}
+.welfare .welfare-item .w-item-image{
+  height: 240rpx;
+  width: 100%;
+}
+.welfare .w-item-image .w-item-icon{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.welfare .w-item-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10rpx 20rpx;
+}
+.welfare .w-item-footer .w-item-click, .welfare .w-item-footer .w-item-number{
+  font-size: 13px;
+  color: #ff4114;
+}
+.welfare .w-item-footer .w-item-number{
+  color: #909090;
+}

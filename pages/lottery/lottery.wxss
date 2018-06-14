@@ -1,0 +1,47 @@
+/* pages/lottery/lottery.wxss */
+.header{
+  height: 130px;
+  width: 100%;
+}
+.header .header-img{
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .w-issue{
+  background: #fff;
+  position: relative;
+}
+.w-issue .w-header{
+  width: 51%;
+  border-radius: 10px;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0 10px;
+  left: 0;
+  right: 0;
+  top: -15px;
+  background: #fff;
+  box-shadow: 1px 2px #eee;
+}
+.w-issue .w-header .w-text{
+  font-size: 16px;
+  line-height: 30px;
+  color: #333;
+}
+.w-issue .w-header .w-text .w-date{
+  background: #000;
+  color: #fdfdfd;
+   margin: 0 2px;
+   padding: 0 2px;
+   border-radius: 5px;
+}
+.w-issue .w-body{
+  padding: 15px 0 0 0;
+  margin: 10px;
+}
