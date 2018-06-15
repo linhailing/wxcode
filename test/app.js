@@ -34,6 +34,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
-  }
+    userInfo: null,
+    wx_appid: 'wx1827441685a43f5e',
+    wx_appSecret: '61cee052e28042ebf7dad151efc7dc86',
+  },
 })

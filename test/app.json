@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/lottery/lottery",
     "pages/index/index",
+    "pages/test/test",
+    "pages/lottery/lottery",
     "pages/game/game",
     "pages/logs/logs"
   ],

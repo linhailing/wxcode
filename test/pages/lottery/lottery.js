@@ -1,4 +1,5 @@
 // pages/lottery/lottery.js
+const util = require('../../utils/util.js')
 Page({
 
   /**
@@ -15,15 +16,21 @@ Page({
     wx.setNavigationBarTitle({
       title: "领取彩票"
     })
+    //获取信息
+    wx.getSystemInfo({
+      success: function(res){
+        console.log(res);
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    var url = "http://192.168.6.78/mobile/getUserTask?token=DZOtb9PLyWjQMzpClHcW65s3OPnsOqvYvE-eNRS.DLH-eAt15x4X9zcMsdaSAAOTZPSTDoXU-KmU7.hFkSlIGg!!&ttype=0";
+    util.wxGet(url, this.succCallback);
   },
-
   /**
    * 生命周期函数--监听页面显示
    */
@@ -64,5 +71,8 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  succCallback: function (json) {
+    console.log(json.data);
   }
 })
