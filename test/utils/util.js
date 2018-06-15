@@ -39,34 +39,7 @@ const wxGet = function(url,succCallback,errCallback,comCallback){
     }
   })
 }
-const wxPost = function(url,data=[],succ,err,comm){
-  wx.request({
-    url: url,
-    data: data,
-    method: 'POST',
-    dataType: 'json',
-    header: {
-      'content-type': 'application/json' // 默认值
-    },
-    success: function (json) {
-      if (succCallback) {
-        succCallback(json);
-      }
-    },
-    fail: function (json) {
-      if (errCallback) {
-        errCallback(json);
-      }
-    },
-    complete: function (data) {
-      //成功失败都要调用该方法
-      if (comCallback) {
-        comCallback(json);
-      }
-    }
-  })
-}
-const wxPostForm = function (url, data = [], succ, err, comm) {
+const wxPost = function (url, data = [], sCallback, errCallback, comCallback){
   wx.request({
     url: url,
     data: data,
@@ -76,8 +49,8 @@ const wxPostForm = function (url, data = [], succ, err, comm) {
       'content-type': 'application/x-www-form-urlencoded' // 默认值
     },
     success: function (json) {
-      if (succCallback) {
-        succCallback(json);
+      if (sCallback){
+        sCallback(json.data);
       }
     },
     fail: function (json) {
@@ -93,10 +66,29 @@ const wxPostForm = function (url, data = [], succ, err, comm) {
     }
   })
 }
+const getStorage = function(key){
+  var value ='';
+  var key = 'xyhd_' + key;
+  wx.getStorage({
+    key: key,
+    success: function(res) {
+      value = res.data
+    },
+  })
+  return value;
+}
+const setStorage = function (key,data) {
+  var key = 'xyhb_' + key; 
+  wx.setStorage({
+    key: key,
+    data: data
+  })
+}
 
 module.exports = {
   formatTime: formatTime,
   wxGet: wxGet,
   wxPost: wxPost,
-  wxPostForm: wxPostForm
+  setStorage: setStorage,
+  getStorage: getStorage
 }

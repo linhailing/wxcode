@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/test/test",
+    "pages/index/index",
     "pages/lottery/lottery",
     "pages/game/game",
     "pages/logs/logs"
@@ -10,7 +10,7 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#ff4114",
     "navigationBarTitleText": "小游荷包",
-    "navigationBarTextStyle":"white",
+    "navigationBarTextStyle":"white", 
     "backgroundColor": "#eeeeee"
   },
   "tabBar": {

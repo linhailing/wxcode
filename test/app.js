@@ -37,5 +37,6 @@ App({
     userInfo: null,
     wx_appid: 'wx1827441685a43f5e',
     wx_appSecret: '61cee052e28042ebf7dad151efc7dc86',
+    root_url: 'http://local.api.com:8888/'
   },
 })

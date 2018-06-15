@@ -73,6 +73,8 @@ Page({
   
   },
   succCallback: function (json) {
+    console.log('init...');
     console.log(json.data);
+    console.log('init...');
   }
 })
